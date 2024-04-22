@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="/static/logo.ico" type="image/x-icon">
+		{% block head_content %}
+		{% endblock %}
+	</head>
+	<body>
+		{% block header_content %}
+		{% endblock %}
+		
+		{% block main_content %}
+		{% endblock %}
+		
+		{% block footer_content %}
+			<footer class="footer">
+				<a class="footer__link" href="/">Portfolio</a>
+				<a class="footer__link" href="https://github.com/ErikaItzelDiaz/portfolio">GitHub</a>
+				<a class="footer__link" href="https://www.linkedin.com/in/eerikaz/">LinkedIn</a>
+			</footer>
+		{% endblock %}
+	</body>
+</html>
