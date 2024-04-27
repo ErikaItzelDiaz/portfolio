@@ -5,7 +5,7 @@ load_dotenv()
 
 projects = [
     {
-        "name": "Habit tracking app with Python and MongoDB",
+        "name": "Habit Tracking app",
         "thumb": "img/tracker.png",
         "hero": "img/tracker.png",
         "categories": ["python", "web"],
@@ -14,7 +14,7 @@ projects = [
         "git": "https://github.com/ErikaItzelDiaz/habitTracker",
     },
     {
-        "name": "MicroBlog app with Python and MongoDB",
+        "name": "MicroBlog app",
         "thumb": "img/blog.png",
         "hero": "img/blog.png",
         "categories": ["python", "web"],
@@ -23,7 +23,7 @@ projects = [
         "git": "https://github.com/ErikaItzelDiaz/microBlog",
     },
     {
-        "name": "Password Generator app with Python",
+        "name": "Password Generator app",
         "thumb": "img/generator.png",
         "hero": "img/generator.png",
         "categories": ["python", "web"],
