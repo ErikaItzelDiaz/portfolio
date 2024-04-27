@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* Define color variables */
+:root{
+    --seasalt: #f4f7f5;
+    --silver: #bdbbb6;
+    --paynes-gray: #546a76;
+    --jet: #464142;
+    --khaki: #a99f96;
+}
+/* Set global styles */
+html{
+    font-family: 'Courier New', monospace, 'Arial', sans-serif;
+    background-color: var(--seasalt);
+}
+
+/* Set Navigation */
+body {
+  margin-top: 80px;
+}
+
+.header {
+  text-align: center;
+}
+
+.nav {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #1c2023;
+}
+
+.nav__link:not(:last-of-type) {
+  margin-right: 2.5rem;
+}
+
+.nav__link--active,
+.nav__link:hover {
+  font-weight: bold;
+}
+
+/* 404 styles */
+.main{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.main--error{
+    flex-direction: column;
+    max-width: 500px;
+    padding: 0 1rem;
+    line-height: 150%;
+}
+
+/* Footer styles */
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.footer__link{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--rose-taupe);
+}
+.footer__link:hover{
+  color: var(--silver);
+}

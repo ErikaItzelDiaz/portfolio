@@ -11,14 +11,10 @@ html{
     font-family: 'Courier New', monospace, 'Arial', sans-serif;
     background-color: var(--seasalt);
 }
-/* Navbar styles */
-.navbar{
+/* Heading styles */
+.heading{
     padding: 50px;
     text-align: center;
-}
-.navbar__logo{
-    width: 75px;
-    height: 75px;
 }
 
 /* Content section styles */
@@ -34,29 +30,14 @@ html{
     margin-bottom: 0;
 }
 .content__text{
-    color: var(--silver);
+    color: var(--chinese-violet);
     letter-spacing: 0.1rem;
 }
-/* Footer styles */
-.footer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
-    padding-top: 10%;
-}
-.footer__link{
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--rose-taupe);
-}
-.footer__link:hover{
-  color: var(--chinese-violet);
-}
 
+
+/* Media Queries */
 @media only screen and (max-width: 980px) {
-    .navbar {
+    .heading {
         padding: 5%;
         width: 90%;
         margin-left: auto;

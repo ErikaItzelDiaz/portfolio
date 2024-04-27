@@ -3,23 +3,35 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="/static/logo.ico" type="image/x-icon">
+		<link rel="icon" href="/static/img/logo.ico" type="image/x-icon">
+		<link rel="stylesheet" href="/static/css/baseStyles.css">
+		<title>{{ title }}</title>
 		{% block head_content %}
 		{% endblock %}
 	</head>
 	<body>
-		{% block header_content %}
-		{% endblock %}
+		<header class="header">
+			<h1>Erika Itzel Diaz</h1>
+			<nav class="nav">
+				<a href="{{ url_for('home') }}" class="nav__link {{ 'nav__link--active' if request.path == url_for('home') }}">Projects</a>
+				<a href="{{ url_for('about') }}" class="nav__link {{ 'nav__link--active' if request.path == url_for('about') }}">About</a>
+			</nav>
+		</header>
 		
 		{% block main_content %}
+			<main class="main main--error">
+				<h1>404 - Page Not Found </h1>
+				<p>
+				Sorry, we couldn't find the page you're looking for.
+				It may have been misspelled, or it doesn't exist anymore.
+				</p>
+			</main>
 		{% endblock %}
 		
-		{% block footer_content %}
-			<footer class="footer">
-				<a class="footer__link" href="/">Portfolio</a>
-				<a class="footer__link" href="https://github.com/ErikaItzelDiaz/portfolio">GitHub</a>
-				<a class="footer__link" href="https://www.linkedin.com/in/eerikaz/">LinkedIn</a>
-			</footer>
-		{% endblock %}
+		<footer class="footer">
+			<a class="footer__link" href="{{ url_for('home') }}">Projects</a>
+			<a class="footer__link" href="https://github.com/ErikaItzelDiaz/portfolio">GitHub</a>
+			<a class="footer__link" href="https://www.linkedin.com/in/eerikaz/">LinkedIn</a>
+		</footer>
 	</body>
 </html>
